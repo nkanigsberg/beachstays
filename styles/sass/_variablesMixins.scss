@@ -6,14 +6,16 @@
 	
 	// background colours
 	$primaryBackground: #D2F9F1;
-	$secondaryBackground: #50E3C2;
+	$secondaryBackground: lighten(#50E3C2, 20);
 	$footerBackground: #2C2C2C;
 
+
 	// font colours + pseudo states
-	$fontBlack: #2C2C2C;
-	$fontWhite: #FAFFFE;
-	$primaryAccent: #063974;
-	$secondaryAccent: #0C5F4C;
+	$black: #2C2C2C;
+	$white: #FAFFFE;
+	$accent1: #50E3C2;
+	$accent2: #063974;
+	$accent3: #0C5F4C;
 
 	
 	// font stacks

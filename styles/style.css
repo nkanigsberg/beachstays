@@ -288,10 +288,8 @@ html {
   font-size: 62.5%;
 }
 
-/* back to 16px at default client font-size */
 body {
   font-size: 1.6rem;
-  overflow-x: hidden;
 }
 
 /* wrapper styles */
@@ -308,4 +306,87 @@ html {
 
 body {
   font-family: "Lato", sans-serif;
+  background-color: #FAFFFE;
+}
+
+header {
+  height: 100vh;
+  position: relative;
+}
+
+header .accent-image {
+  z-index: 90;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-image: url(../images/header-box.jpg);
+  background-size: cover;
+  height: calc(20rem + 30vw);
+  width: calc(20rem + 30vw);
+}
+
+header input,
+header label {
+  display: none;
+}
+
+.hero {
+  background-image: url(../images/home-image-1.jpg);
+  background-size: cover;
+  height: 85%;
+}
+
+.top-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.top-bar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.top-bar ul a {
+  font-size: 2rem;
+  line-height: 2.9rem;
+  letter-spacing: 0.1rem;
+  color: #FAFFFE;
+  display: inline-block;
+  padding: 1rem 2rem;
+}
+
+.top-bar ul a:hover, .top-bar ul a:focus {
+  color: #50E3C2;
+}
+
+.logo {
+  font-family: "Playfair Display SC", serif;
+  font-size: 3.46rem;
+  color: #50E3C2;
+  padding: 1rem;
+}
+
+h1 {
+  text-transform: lowercase;
+  font-size: 6.2rem;
+  letter-spacing: 0.67rem;
+  color: #0C5F4C;
+  z-index: 100;
+  position: absolute;
+  bottom: 40rem;
+  left: calc(15rem + 25vw);
+  width: 40rem;
+}
+
+h1 span {
+  font-family: "Playfair Display SC", serif;
+  text-transform: uppercase;
+  font-size: 11.12rem;
+  color: #063974;
 }

@@ -49,10 +49,9 @@ address {
 html {
 	font-size: 62.5%;
 }
-/* back to 16px at default client font-size */
+
 body {
 	font-size: 1.6rem;
-	overflow-x: hidden;
 }
 
 /* wrapper styles */
@@ -71,5 +70,8 @@ html {
 
 body {
 	font-family: $primaryFont;
+
+	background-color: $white;
 }
+
 
