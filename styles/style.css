@@ -276,6 +276,7 @@ img {
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+  display: block;
 }
 
 /* strip default address styling */
@@ -307,6 +308,55 @@ html {
 body {
   font-family: "Lato", sans-serif;
   background-color: #FAFFFE;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 3.5rem;
+  line-height: 5.8rem;
+  letter-spacing: 0.38rem;
+  color: #0C5F4C;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 5.8rem;
+  letter-spacing: 0.32rem;
+  color: #0C5F4C;
+}
+
+p {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.2rem;
+  color: #2C2C2C;
+}
+
+.button,
+button {
+  font-family: "Playfair Display SC", serif;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.1rem;
+  color: #FAFFFE;
+  background-color: #063974;
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin-top: 1.5rem;
+}
+
+.button:hover, .button:focus,
+button:hover,
+button:focus {
+  background-color: #0951a4;
+}
+
+a,
+button {
+  -webkit-transition: 0.1s background-color, 0.1s color;
+  transition: 0.1s background-color, 0.1s color;
 }
 
 header {
@@ -389,4 +439,205 @@ h1 span {
   text-transform: uppercase;
   font-size: 11.12rem;
   color: #063974;
+}
+
+.visit {
+  padding: 10rem 0;
+}
+
+.visit-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.visit .text {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+
+.visit .image {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  height: auto;
+  -webkit-box-shadow: -15px 15px #50E3C2;
+          box-shadow: -15px 15px #50E3C2;
+}
+
+.gallery {
+  background-color: #d4f8f0;
+  padding: 10rem 0;
+}
+
+.gallery-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.gallery .image {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+.info {
+  padding: 8rem 0;
+}
+
+.info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.info-item {
+  position: relative;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-left: 8rem;
+  padding-bottom: 5rem;
+}
+
+.info .icon {
+  background-color: #50E3C2;
+  color: #FAFFFE;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  padding: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 1rem;
+  top: 0.5rem;
+}
+
+.info i {
+  font-size: 2.6rem;
+  display: inline-block;
+}
+
+.next-step {
+  background-color: #d4f8f0;
+}
+
+.next-step-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.next-step-container h2 {
+  color: #063974;
+}
+
+.next-step .image,
+.next-step .text {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  max-width: 45%;
+}
+
+.next-step img {
+  width: 45vw;
+  min-width: 45vw;
+}
+
+.next-step .image {
+  position: relative;
+}
+
+.next-step .image-1 {
+  direction: rtl;
+  top: -5rem;
+}
+
+.next-step .image-1 img {
+  -webkit-box-shadow: 15px 15px #50E3C2;
+          box-shadow: 15px 15px #50E3C2;
+}
+
+.next-step .image-2 {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+  bottom: -5rem;
+}
+
+.next-step .image-2 img {
+  -webkit-box-shadow: -15px 15px #50E3C2;
+          box-shadow: -15px 15px #50E3C2;
+}
+
+.next-step .text-2 {
+  text-align: right;
+}
+
+.free-trip {
+  text-align: center;
+  background-color: #FAFFFE;
+}
+
+.free-trip .text {
+  padding: 10rem 0;
+}
+
+footer {
+  background-color: #2C2C2C;
+  padding: 0.5rem;
+  position: relative;
+}
+
+footer p {
+  color: #FAFFFE;
+}
+
+footer .copyright {
+  text-align: center;
+}
+
+footer .created {
+  font-size: 1.6rem;
+  position: absolute;
+  left: 1rem;
+  bottom: 0.5rem;
+}
+
+footer .created a {
+  text-decoration: underline;
+  -webkit-transition: 0.1s opacity;
+  transition: 0.1s opacity;
+}
+
+footer .created a:hover, footer .created a:focus {
+  opacity: 60%;
 }

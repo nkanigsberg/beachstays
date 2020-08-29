@@ -1,0 +1,98 @@
+// Next step section
+.next-step {
+	background-color: $secondaryBackground;
+
+	&-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+
+		h2 {
+			color: $accent2;
+		}
+	}
+
+	.image,
+	.text {
+		flex-basis: 45%;
+		max-width: 45%;
+	}
+
+	img {
+		width: 45vw;
+		min-width: 45vw;
+	}
+
+	.image {
+		position: relative;
+
+		&-1 {
+			direction: rtl;
+			top: -5rem;
+
+			img {
+				@include box-shadow(right);
+			}
+		}
+
+		&-2 {
+			order: 4;
+			bottom: -5rem;
+			img {
+				@include box-shadow(left);
+			}
+		}
+	}
+
+	.text {
+		&-2 {
+			text-align: right;
+		}
+	}
+}
+
+// free trip section
+.free-trip {
+	text-align: center;
+	background-color: $white;
+
+	.text {
+		padding: 10rem 0;
+	}
+}
+
+
+// footer
+footer {
+	background-color: $black;
+	padding: 0.5rem;
+
+	position: relative;
+	
+	p {
+		color: $white;
+	}
+	
+	.copyright {
+		text-align: center;
+	}
+
+	.created {
+		font-size: 1.6rem;
+		
+		position: absolute;
+		left: 1rem;
+		bottom: 0.5rem;
+
+		a {
+			text-decoration: underline;
+			transition: 0.1s opacity;
+
+			&:hover,
+			&:focus {
+				opacity: 60%;
+			}
+		}
+	}
+}

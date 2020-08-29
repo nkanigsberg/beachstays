@@ -6,7 +6,7 @@
 	
 	// background colours
 	$primaryBackground: #D2F9F1;
-	$secondaryBackground: lighten(#50E3C2, 20);
+	$secondaryBackground: lighten(#50E3C2, 30);
 	$footerBackground: #2C2C2C;
 
 
@@ -17,7 +17,21 @@
 	$accent2: #063974;
 	$accent3: #0C5F4C;
 
+	$buttonHover: lighten(#063974, 10);
+
 	
 	// font stacks
 	$primaryFont: 'Lato', sans-serif;
 	$secondaryFont: 'Playfair Display SC', serif;
+
+
+	//mixins
+
+	// box shadow
+	@mixin box-shadow($direction) {
+		@if $direction == left {
+			box-shadow: -15px 15px $accent1;
+		} @else {
+			box-shadow: 15px 15px $accent1;
+		}
+	}

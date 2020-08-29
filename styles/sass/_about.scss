@@ -1,0 +1,82 @@
+// About section
+// visit
+.visit {
+	padding: 10rem 0;
+
+	&-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.text {
+		flex-basis: 60%;
+	}
+
+	.image {
+		flex-basis: 25%;
+		height: auto;
+
+		@include box-shadow(left);
+	}
+}
+
+// gallery
+.gallery {
+	background-color: $secondaryBackground;
+
+	padding: 10rem 0;
+
+	&-container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.image {
+		flex-basis: 30%;
+	}
+}
+
+// info
+.info {
+
+	padding: 8rem 0;
+	
+	&-container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	&-item {
+		position: relative;
+
+		flex-basis: 50%;
+		padding-left: 8rem;
+		padding-bottom: 5rem;
+	}
+
+	.icon {
+		background-color: $accent1;
+		color: $white;
+		border-radius: 50%;
+
+		width: 5rem;
+		height: 5rem;
+		padding: 0.8rem;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		position: absolute;
+		left: 1rem;
+		top: 0.5rem;
+	}
+
+	i {
+		font-size: 2.6rem;
+
+		display: inline-block;
+	}
+}

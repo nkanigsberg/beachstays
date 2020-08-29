@@ -38,6 +38,7 @@ img {
 	max-width: 100%;
 	height: auto;
 	object-fit: cover;
+	display: block;
 }
 
 /* strip default address styling */
@@ -74,4 +75,58 @@ body {
 	background-color: $white;
 }
 
+h2 {
+	font-weight: bold;
+	font-size: 3.5rem;
+	line-height: 5.8rem;
+	letter-spacing: 0.38rem;
 
+	color: $accent3;
+
+	margin-bottom: 1rem;
+}
+
+h3 {
+	font-weight: bold;
+	font-size: 3rem;
+	line-height: 5.8rem;
+	letter-spacing: 0.32rem;
+
+	color: $accent3;
+}
+
+
+p {
+	font-size: 2rem;
+	line-height: 3.2rem;
+	letter-spacing: 0.2rem;
+
+	color: $black;
+}
+
+.button,
+button {
+	font-family: $secondaryFont;
+	font-size: 2rem;
+	line-height: 3.2rem;
+	letter-spacing: 0.1rem;
+
+	color: $white;
+	background-color: $accent2;
+
+	display: inline-block;
+	padding: 1rem 2rem;
+	margin-top: 1.5rem;
+
+	&:hover,
+	&:focus {
+		background-color: $buttonHover;
+	}
+}
+
+a,
+button {
+	transition: 
+		0.1s background-color,
+		0.1s color;
+}
