@@ -1,25 +1,19 @@
 form {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		// gap: 3rem;
 		gap: calc(1.5rem + 1.5vw);
 
 
 		input,
 		textarea {
 			font-weight: 300;
-			// font-size: 2rem;
 			font-size: calc(1rem + 1vw);
-			// line-height: 3.2rem;
 			line-height: calc(1.6rem + 1.6vw);
-			// letter-spacing: 0.2rem;
 			letter-spacing: calc(0.1rem + 0.1vw);
 
 			background-color: inherit;
-			// padding: 2rem;
+
 			padding: calc(1rem + 1vw);
-
-
 		}
 
 	input {
@@ -31,7 +25,6 @@ form {
 
 	textarea {
 		border: 2px solid $accent1;
-		// height: 20rem;
 		height: calc(10rem + 10vw);
 	}
 }
@@ -40,5 +33,4 @@ form {
 #message,
 button {
 	grid-column: span 2;
-
 }

@@ -20,8 +20,6 @@
 	}
 
 	img {
-		// width: 45vw;
-		// min-width: 45vw;
 		width: calc(-3rem + 48vw);
 		min-width: calc(-2.2rem + 48vw);
 	}
@@ -31,7 +29,6 @@
 
 		&-1 {
 			direction: rtl;
-			// top: -5rem;
 			top: calc(-2.5rem - 2.5vw);
 
 			img {
@@ -41,7 +38,6 @@
 
 		&-2 {
 			order: 4;
-			// bottom: -5rem;
 			bottom: calc(-2.5rem - 2.5vw);
 			img {
 				@include box-shadow(left);
@@ -61,11 +57,6 @@
 .free-trip {
 	text-align: center;
 	background-color: $white;
-
-	.text {
-		// padding: 10rem 0;
-		// padding: calc(5rem + 5vw) 0;
-	}
 }
 
 .banner-image img {

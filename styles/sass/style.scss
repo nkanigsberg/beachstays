@@ -1,14 +1,19 @@
-@import './variablesMixins';
-@import './setup';
-@import './global';
-@import './nav';
-@import './header';
-@import './about';
-@import './nextStep';
-@import './form';
-@import './blog';
-@import './contact';
-@import './footer';
-@import './media1024';
-@import './media768';
-@import './media480';
+@import './abstracts/variablesMixins';
+
+@import './base/setup';
+@import './base/global';
+
+@import './components/form';
+
+@import './layout/nav';
+@import './layout/header';
+@import './layout/footer';
+
+@import './pages/about';
+@import './pages/nextStep';
+@import './pages/blog';
+@import './pages/contact';
+
+@import './mediaQueries/media1024';
+@import './mediaQueries/media768';
+@import './mediaQueries/media480';

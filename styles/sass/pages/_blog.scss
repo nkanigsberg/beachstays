@@ -18,13 +18,11 @@
 		.text {
 			border: 5px solid $accent1;
 
-			// padding: 6rem 7.5rem 6rem 50%;
 			padding: calc(2rem + 3.5vw) calc(2rem + 3.5vw) calc(1rem + 3vw) 50%;
 			margin: 0 -1.5rem -13.5rem -50%;
 		}
 
 		time {
-			// margin-bottom: 3rem;
 			margin-bottom: calc(1.5rem + 1.5vw);
 
 		span {
@@ -36,7 +34,6 @@
 	// time stamp of blog post
 	time {
 		font-style: italic;
-		// font-size: 2rem;
 		font-size: calc(1rem + 1vw);
 
 		color: $accent2;
@@ -50,28 +47,23 @@
 }
 
 .comments {
-	// padding: 6rem 0 10rem;
 	padding: calc(3rem + 3vw) 0 calc(5rem + 5vw);
 
 	width: $contentWidth;
 
 	h3 {
-		// font-size: 3rem;
 		font-size: calc(1.5rem + 1.5vw);
 
 		color: $black;
 
-		// margin-bottom: 3rem;
 		margin-bottom: calc(1.5rem + 1.5vw);
 	}
 
 	time {
 		font-style: normal;
 		font-weight: bold;
-		// letter-spacing: 0.2rem;
 		letter-spacing: calc(0.1rem + 0.1vw);
 
-		// margin-bottom: 1rem;
 		margin-bottom: calc(0.5rem + 0.5vw);
 	}
 }
@@ -81,12 +73,10 @@
 	grid-template-columns: minmax(6rem, 1fr) 7fr;
 
 	&:first-of-type {
-		// margin-bottom: 6rem;
 		margin-bottom: calc(3rem + 3vw);
 	}
 
 	.text {
-		// padding-left: 3rem;
 		padding-left: calc(1.5rem + 1.5vw);
 	}
 }
@@ -99,19 +89,15 @@
 
 	position: absolute;
 	right: 0;
-	// top: 10rem;
 	top: calc(5rem + 5vw);
 
 	h4 {
 		font-weight: bold;
-		// font-size: 2.5rem;
 		font-size: calc(1.25rem + 1.25vw);
-		// letter-spacing: 0.1rem;
 		letter-spacing: calc(0.05rem + 0.05vw);
 		
 		color: $accent2;
 
-		// margin: 2rem 0;
 		margin: calc(1rem + 1vw) 0;
 	}
 
@@ -121,14 +107,11 @@
 
 	a {
 		font-weight: bold;
-		// font-size: 2rem;
 		font-size: calc(1rem + 1vw);
-		// letter-spacing: 0.25rem;
 		letter-spacing: calc(0.125rem + 0.125vw);
 
 		color: $accent3;
 
-		// margin: 1rem 0 2rem;
 		margin: calc(0.5rem + 0.5vw) 0 calc(1rem + 1vw);
 
 		transition: 0.1s opacity;
@@ -140,20 +123,17 @@
 	}
 
 	li {
-		// padding-left: 3.5rem;
 		padding-left: calc(1.5rem + 2vw);
 
 		position: relative;
 
 		&::before {
 			content: '•';
-			// font-size: 2rem;
 			font-size: calc(1rem + 1vw);
 
 			color: $accent1;
 
 			position: absolute;
-			// left: 1rem;
 			left: calc(0.5rem + 0.5vw);
 			top: 0.5rem;
 		}

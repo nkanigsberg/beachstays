@@ -69,7 +69,6 @@
 				margin-bottom: 6rem;
 			}
 		}
-
 	}
 
 	// =============== forms ===============
@@ -78,7 +77,6 @@
 			grid-column: span 2;
 		}
 	}
-
 
 	// =============== blog ===============
 	
@@ -92,8 +90,6 @@
 
 		.image {
 			flex-basis: 85%;
-			// order: 1;
-
 			margin: 2rem 0;
 		}
 
@@ -113,9 +109,6 @@
 	// =============== contact ===============
 	.contact {
 		margin: -4rem 0 2.5rem;
-
 		flex-basis: 100%;
 	}
-
-
 }

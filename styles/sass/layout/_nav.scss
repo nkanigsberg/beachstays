@@ -14,9 +14,7 @@
 
 
 		a {
-			// font-size: 2rem;
 			font-size: calc(1rem + 1vw);
-			// line-height: 2.9rem;
 			line-height: calc(1.4rem + 1.5vw);
 			letter-spacing: 0.1rem;
 			text-transform: uppercase;
@@ -24,7 +22,6 @@
 			color: $white;
 
 			display: inline-block;
-			// padding: 1rem 2rem;
 			padding: calc(0.5rem + 0.5vw) calc(1rem + 1vw);
 
 
@@ -46,7 +43,6 @@
 
 .logo {
 	font-family: $secondaryFont;
-	// font-size: 3.46rem;
 	font-size: calc(1.7rem + 1.7vw);
 	font-weight: 900;
 	font-style: italic;

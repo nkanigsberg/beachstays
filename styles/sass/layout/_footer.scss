@@ -1,7 +1,6 @@
 // footer
 footer {
 	background-color: $black;
-	// padding: 0.5rem;
 	padding: calc(0.25rem + 0.25vw);
 
 	position: relative;
@@ -17,7 +16,6 @@ footer {
 	}
 
 	.created {
-		// font-size: 1.6rem;
 		font-size: calc(0.8rem + 0.8vw);
 		
 		position: absolute;

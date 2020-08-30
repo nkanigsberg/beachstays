@@ -300,6 +300,7 @@ html {
 body {
   font-family: "Lato", sans-serif;
   background-color: #FAFFFE;
+  overflow-x: hidden;
 }
 
 h2 {
@@ -378,6 +379,41 @@ button {
   color: black;
   left: 0;
   top: 0;
+}
+
+form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: calc(1.5rem + 1.5vw);
+}
+
+form input,
+form textarea {
+  font-weight: 300;
+  font-size: calc(1rem + 1vw);
+  line-height: calc(1.6rem + 1.6vw);
+  letter-spacing: calc(0.1rem + 0.1vw);
+  background-color: inherit;
+  padding: calc(1rem + 1vw);
+}
+
+form input {
+  border: none;
+  border-bottom: 2px solid #50E3C2;
+  width: 100%;
+}
+
+form textarea {
+  border: 2px solid #50E3C2;
+  height: calc(10rem + 10vw);
+}
+
+#comment,
+#message,
+button {
+  grid-column: span 2;
 }
 
 .top-bar {
@@ -501,6 +537,38 @@ button {
 
 .contact-page header {
   background-image: url(../../images/contact-image-1.jpg);
+}
+
+footer {
+  background-color: #2C2C2C;
+  padding: calc(0.25rem + 0.25vw);
+  position: relative;
+}
+
+footer p {
+  color: #FAFFFE;
+  margin: 0;
+}
+
+footer .copyright {
+  text-align: center;
+}
+
+footer .created {
+  font-size: calc(0.8rem + 0.8vw);
+  position: absolute;
+  left: 1rem;
+  bottom: 0.5rem;
+}
+
+footer .created a {
+  text-decoration: underline;
+  -webkit-transition: 0.1s opacity;
+  transition: 0.1s opacity;
+}
+
+footer .created a:hover, footer .created a:focus {
+  opacity: 60%;
 }
 
 .visit-container {
@@ -662,41 +730,6 @@ button {
 
 .banner-image img {
   min-height: 15rem;
-}
-
-form {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  gap: calc(1.5rem + 1.5vw);
-}
-
-form input,
-form textarea {
-  font-weight: 300;
-  font-size: calc(1rem + 1vw);
-  line-height: calc(1.6rem + 1.6vw);
-  letter-spacing: calc(0.1rem + 0.1vw);
-  background-color: inherit;
-  padding: calc(1rem + 1vw);
-}
-
-form input {
-  border: none;
-  border-bottom: 2px solid #50E3C2;
-  width: 100%;
-}
-
-form textarea {
-  border: 2px solid #50E3C2;
-  height: calc(10rem + 10vw);
-}
-
-#comment,
-#message,
-button {
-  grid-column: span 2;
 }
 
 .blog-page article {
@@ -892,38 +925,6 @@ button {
   margin-top: calc(0.9rem + 0.9vw);
 }
 
-footer {
-  background-color: #2C2C2C;
-  padding: calc(0.25rem + 0.25vw);
-  position: relative;
-}
-
-footer p {
-  color: #FAFFFE;
-  margin: 0;
-}
-
-footer .copyright {
-  text-align: center;
-}
-
-footer .created {
-  font-size: calc(0.8rem + 0.8vw);
-  position: absolute;
-  left: 1rem;
-  bottom: 0.5rem;
-}
-
-footer .created a {
-  text-decoration: underline;
-  -webkit-transition: 0.1s opacity;
-  transition: 0.1s opacity;
-}
-
-footer .created a:hover, footer .created a:focus {
-  opacity: 60%;
-}
-
 @media (max-width: 1024px) {
   .home-page header {
     height: 80vh;
@@ -977,11 +978,11 @@ footer .created a:hover, footer .created a:focus {
     outline: 1px dotted #50E3C2;
   }
   .top-bar label {
-    font-size: 2rem;
     cursor: pointer;
+    font-size: 2rem;
     color: white;
-    padding: 1rem;
     text-shadow: -1px 1px #50E3C2;
+    padding: 1rem;
   }
   .top-bar label:hover {
     color: #50E3C2;
