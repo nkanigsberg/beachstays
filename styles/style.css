@@ -304,39 +304,39 @@ body {
 
 h2 {
   font-weight: bold;
-  font-size: 3.5rem;
-  line-height: 5.8rem;
-  letter-spacing: 0.38rem;
+  font-size: calc(1.7rem + 1.8vw);
+  line-height: calc(2.9rem + 2.9vw);
+  letter-spacing: calc(0.19rem + 0.19vw);
   color: #0C5F4C;
-  margin-bottom: 1rem;
+  margin-bottom: calc(0.4rem + 0.5vw);
 }
 
 h3 {
   font-weight: bold;
-  font-size: 3rem;
-  line-height: 5.8rem;
-  letter-spacing: 0.32rem;
+  font-size: calc(1.5rem + 1.5vw);
+  line-height: calc(2.9rem + 2.9vw);
+  letter-spacing: calc(0.16rem + 0.16vw);
   color: #0C5F4C;
 }
 
 p {
-  font-size: 2rem;
-  line-height: 3.2rem;
-  letter-spacing: 0.2rem;
+  font-size: calc(0.9rem + 0.9vw);
+  line-height: calc(1.5rem + 1.6vw);
+  letter-spacing: calc(0.08rem + 0.1vw);
   color: #2C2C2C;
-  margin-bottom: 2.8rem;
+  margin-bottom: calc(1.4rem + 1.4vw);
 }
 
 .button,
 button {
   font-family: "Playfair Display SC", serif;
-  font-size: 2rem;
-  line-height: 3.2rem;
-  letter-spacing: 0.1rem;
+  font-size: calc(1rem + 1vw);
+  line-height: calc(1.6rem + 1.6vw);
+  letter-spacing: calc(0.05rem + 0.05vw);
   color: #FAFFFE;
   background-color: #063974;
   display: inline-block;
-  padding: 1rem 2rem;
+  padding: calc(0.5rem + 0.5vw) calc(1rem + 1vw);
 }
 
 .button:hover, .button:focus,
@@ -351,6 +351,25 @@ button {
   transition: 0.1s background-color, 0.1s color;
 }
 
+.skip-link {
+  z-index: 1000;
+  background: white;
+  color: black;
+  border-radius: 5px;
+  opacity: 90%;
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.skip-link:focus {
+  color: black;
+  left: 0;
+  top: 0;
+}
+
 .top-bar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -358,7 +377,12 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 1rem;
+  position: relative;
+  z-index: 200;
 }
 
 .top-bar ul {
@@ -368,13 +392,13 @@ button {
 }
 
 .top-bar ul a {
-  font-size: 2rem;
-  line-height: 2.9rem;
+  font-size: calc(1rem + 1vw);
+  line-height: calc(1.4rem + 1.5vw);
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   color: #FAFFFE;
   display: inline-block;
-  padding: 1rem 2rem;
+  padding: calc(0.5rem + 0.5vw) calc(1rem + 1vw);
 }
 
 .top-bar ul a:hover, .top-bar ul a:focus {
@@ -388,7 +412,7 @@ button {
 
 .logo {
   font-family: "Playfair Display SC", serif;
-  font-size: 3.46rem;
+  font-size: calc(1.7rem + 1.7vw);
   font-weight: 900;
   font-style: italic;
   color: #50E3C2;
@@ -407,8 +431,9 @@ button {
   bottom: 0;
   background-image: url(../images/header-box.jpg);
   background-size: cover;
-  height: calc(20rem + 30vw);
-  width: calc(20rem + 30vw);
+  height: calc(20rem + 28vw);
+  width: calc(20rem + 28vw);
+  max-height: 80vh;
 }
 
 .home-page .hero {
@@ -420,22 +445,22 @@ button {
 
 .home-page h1 {
   text-transform: lowercase;
-  font-size: 6.2rem;
-  letter-spacing: 0.67rem;
+  font-size: calc(2rem + 3.1vw);
+  letter-spacing: calc(0.3rem + 0.35vw);
   font-weight: 900;
   font-style: italic;
   color: #0C5F4C;
   z-index: 100;
   position: absolute;
-  bottom: 40rem;
-  left: calc(15rem + 25vw);
-  width: 40rem;
+  bottom: 35vh;
+  left: calc(10rem + 25vw);
+  width: calc(30rem + 30vw);
 }
 
 .home-page h1 span {
   font-family: "Playfair Display SC", serif;
   text-transform: uppercase;
-  font-size: 11.12rem;
+  font-size: calc(3rem + 5vw);
   color: #063974;
 }
 
@@ -444,16 +469,18 @@ button {
   background-size: cover;
   background-position: center;
   height: 70vh;
+  position: relative;
 }
 
 .blog-page h1,
 .contact-page h1 {
   font-weight: bold;
-  font-size: 8.7rem;
-  line-height: 5.8rem;
-  letter-spacing: 0.9rem;
+  font-size: calc(4.35rem + 4.35vw);
+  line-height: calc(2.8rem + 2.8vw);
+  letter-spacing: calc(0.45rem + 0.45vw);
   color: #FAFFFE;
-  margin-top: 25vh;
+  position: absolute;
+  bottom: 20rem;
 }
 
 .blog-page header {
@@ -465,7 +492,7 @@ button {
 }
 
 .visit {
-  padding: 10rem 0;
+  padding: calc(5rem + 5vw) 0;
 }
 
 .visit-container {
@@ -495,7 +522,7 @@ button {
 
 .gallery {
   background-color: #d4f8f0;
-  padding: 10rem 0;
+  padding: calc(5rem + 5vw) 0;
 }
 
 .gallery-container {
@@ -513,7 +540,7 @@ button {
 }
 
 .info {
-  padding: 8rem 0;
+  padding: calc(4rem + 4vw) 0;
 }
 
 .info-container {
@@ -531,17 +558,17 @@ button {
   position: relative;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  padding-left: 8rem;
-  padding-bottom: 5rem;
+  padding-left: calc(4rem + 4vw);
+  padding-bottom: calc(2.5rem + 2.5vw);
 }
 
 .info .icon {
   background-color: #50E3C2;
   color: #FAFFFE;
   border-radius: 50%;
-  width: 5rem;
-  height: 5rem;
-  padding: 0.8rem;
+  width: calc(2.5rem + 2.5vw);
+  height: calc(2.5rem + 2.5vw);
+  padding: calc(0.4rem + 0.4vw);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -552,12 +579,12 @@ button {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  left: 1rem;
-  top: 0.5rem;
+  left: calc(0.5rem + 0.5vw);
+  top: calc(0.25rem + 0.25vw);
 }
 
 .info i {
-  font-size: 2.6rem;
+  font-size: calc(1.3rem + 1.3vw);
   display: inline-block;
 }
 
@@ -591,8 +618,8 @@ button {
 }
 
 .next-step img {
-  width: 45vw;
-  min-width: 45vw;
+  width: calc(-3rem + 48vw);
+  min-width: calc(-2.2rem + 48vw);
 }
 
 .next-step .image {
@@ -601,7 +628,7 @@ button {
 
 .next-step .image-1 {
   direction: rtl;
-  top: -5rem;
+  top: calc(-2.5rem - 2.5vw);
 }
 
 .next-step .image-1 img {
@@ -613,7 +640,7 @@ button {
   -webkit-box-ordinal-group: 5;
       -ms-flex-order: 4;
           order: 4;
-  bottom: -5rem;
+  bottom: calc(-2.5rem - 2.5vw);
 }
 
 .next-step .image-2 img {
@@ -631,7 +658,7 @@ button {
 }
 
 .free-trip .text {
-  padding: 10rem 0;
+  padding: calc(5rem + 5vw) 0;
 }
 
 form {
@@ -639,17 +666,17 @@ form {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  gap: calc(1.5rem + 1.5vw);
 }
 
 form input,
 form textarea {
   font-weight: 300;
-  font-size: 2rem;
-  line-height: 3.2rem;
-  letter-spacing: 0.2rem;
+  font-size: calc(1rem + 1vw);
+  line-height: calc(1.6rem + 1.6vw);
+  letter-spacing: calc(0.1rem + 0.1vw);
   background-color: inherit;
-  padding: 2rem;
+  padding: calc(1rem + 1vw);
 }
 
 form input {
@@ -660,7 +687,7 @@ form input {
 
 form textarea {
   border: 2px solid #50E3C2;
-  height: 20rem;
+  height: calc(10rem + 10vw);
 }
 
 #comment,
@@ -688,14 +715,12 @@ button {
 
 .blog-page article .text {
   border: 5px solid #50E3C2;
-  padding: 6rem 7.5rem 6rem 50%;
-  margin-right: -1.5rem;
-  margin-left: -50%;
-  margin-bottom: -13.5rem;
+  padding: calc(2rem + 3.5vw) calc(2rem + 3.5vw) calc(1rem + 3vw) 50%;
+  margin: 0 -1.5rem -13.5rem -50%;
 }
 
 .blog-page article time {
-  margin-bottom: 3rem;
+  margin-bottom: calc(1.5rem + 1.5vw);
 }
 
 .blog-page article time span {
@@ -704,7 +729,7 @@ button {
 
 .blog-page time {
   font-style: italic;
-  font-size: 2rem;
+  font-size: calc(1rem + 1vw);
   color: #063974;
   display: block;
 }
@@ -714,36 +739,36 @@ button {
 }
 
 .comments {
-  padding: 6rem 0 10rem;
+  padding: calc(3rem + 3vw) 0 calc(5rem + 5vw);
   width: 65%;
 }
 
 .comments h3 {
-  font-size: 3rem;
+  font-size: calc(1.5rem + 1.5vw);
   color: #2C2C2C;
-  margin-bottom: 3rem;
+  margin-bottom: calc(1.5rem + 1.5vw);
 }
 
 .comments time {
   font-style: normal;
   font-weight: bold;
-  letter-spacing: 0.2rem;
-  margin-bottom: 1rem;
+  letter-spacing: calc(0.1rem + 0.1vw);
+  margin-bottom: calc(0.5rem + 0.5vw);
 }
 
 .comment {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 7fr;
-      grid-template-columns: 1fr 7fr;
+  -ms-grid-columns: minmax(6rem, 1fr) 7fr;
+      grid-template-columns: minmax(6rem, 1fr) 7fr;
 }
 
 .comment:first-of-type {
-  margin-bottom: 6rem;
+  margin-bottom: calc(3rem + 3vw);
 }
 
 .comment .text {
-  padding-left: 3rem;
+  padding-left: calc(1.5rem + 1.5vw);
 }
 
 .sidebar {
@@ -754,18 +779,18 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 25vw;
+  width: 26vw;
   position: absolute;
   right: 0;
-  top: 10rem;
+  top: calc(5rem + 5vw);
 }
 
 .sidebar h4 {
   font-weight: bold;
-  font-size: 2.5rem;
-  letter-spacing: 0.1rem;
+  font-size: calc(1.25rem + 1.25vw);
+  letter-spacing: calc(0.05rem + 0.05vw);
   color: #063974;
-  margin: 2rem 0;
+  margin: calc(1rem + 1vw) 0;
 }
 
 .sidebar p {
@@ -774,23 +799,23 @@ button {
 
 .sidebar a {
   font-weight: bold;
-  font-size: 2rem;
-  letter-spacing: 0.25rem;
+  font-size: calc(1rem + 1vw);
+  letter-spacing: calc(0.125rem + 0.125vw);
   color: #0C5F4C;
-  margin: 1rem 0 2rem;
+  margin: calc(0.5rem + 0.5vw) 0 calc(1rem + 1vw);
 }
 
 .sidebar li {
-  padding-left: 3.5rem;
+  padding-left: calc(1.5rem + 2vw);
   position: relative;
 }
 
 .sidebar li::before {
   content: '•';
-  font-size: 2rem;
+  font-size: calc(1rem + 1vw);
   color: #50E3C2;
   position: absolute;
-  left: 1rem;
+  left: calc(0.5rem + 0.5vw);
   top: 0.5rem;
 }
 
@@ -798,7 +823,7 @@ button {
   background-color: #FAFFFE;
   -webkit-box-shadow: 15px 15px #50E3C2;
           box-shadow: 15px 15px #50E3C2;
-  padding: 4rem;
+  padding: calc(2rem + 2vw);
   position: relative;
   top: -15rem;
   width: 65%;
@@ -823,13 +848,13 @@ button {
           flex-direction: column;
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
-  padding-top: 8rem;
+  padding-top: calc(4rem + 4vw);
 }
 
 .contact a {
-  font-size: 2.4rem;
+  font-size: calc(1.2rem + 1.2vw);
   font-weight: bold;
-  letter-spacing: 0.2rem;
+  letter-spacing: calc(0.1rem + 0.1vw);
   color: #2C2C2C;
   -webkit-transition: 0.1s opacity;
   transition: 0.1s opacity;
@@ -843,11 +868,11 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 2rem;
+  margin-bottom: calc(1rem + 1vw);
 }
 
 .contact .social a {
-  margin-right: 2rem;
+  margin-right: calc(1rem + 1vw);
 }
 
 .contact p {
@@ -855,12 +880,12 @@ button {
 }
 
 .contact address {
-  margin-top: 1.8rem;
+  margin-top: calc(0.9rem + 0.9vw);
 }
 
 footer {
   background-color: #2C2C2C;
-  padding: 0.5rem;
+  padding: calc(0.25rem + 0.25vw);
   position: relative;
 }
 
@@ -874,7 +899,7 @@ footer .copyright {
 }
 
 footer .created {
-  font-size: 1.6rem;
+  font-size: calc(0.8rem + 0.8vw);
   position: absolute;
   left: 1rem;
   bottom: 0.5rem;
@@ -888,4 +913,66 @@ footer .created a {
 
 footer .created a:hover, footer .created a:focus {
   opacity: 60%;
+}
+
+@media (max-width: 1024px) {
+  .home-page header {
+    height: 80vh;
+  }
+  .home-page h1 {
+    left: 20vw;
+  }
+  .home-page .visit .image {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-bar ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #2C2C2C;
+    position: fixed;
+    top: 0;
+    right: -16rem;
+    padding: 5.5rem 2rem 3rem;
+    width: 16rem;
+    -webkit-transition: 0.2s right;
+    transition: 0.2s right;
+  }
+  .top-bar input,
+  .top-bar label {
+    display: inline;
+    position: fixed;
+    z-index: 500;
+    top: 1rem;
+    right: 2.5rem;
+  }
+  .top-bar input {
+    opacity: 0;
+  }
+  .top-bar input:checked ~ ul {
+    right: 0;
+  }
+  .top-bar input:focus ~ label {
+    color: #50E3C2;
+    outline: 1px dotted #50E3C2;
+  }
+  .top-bar label {
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    padding: 1rem;
+    text-shadow: -1px 1px #50E3C2;
+  }
+  .top-bar label:hover {
+    color: #50E3C2;
+  }
+  .logo {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
 }

@@ -4,10 +4,12 @@
 		background-color: $white;
 		@include box-shadow(right);
 
-		padding: 4rem;
+		// padding: 4rem;
+		padding: calc(2rem + 2vw);
 		
 		position: relative;
 		top: -15rem;
+
 
 		width: $contentWidth;
 		// width: 20rem;
@@ -25,12 +27,15 @@
 	flex-direction: column;
 	flex-basis: 25%;
 
-	padding-top: 8rem;
+	// padding-top: 8rem;
+	padding-top: calc(4rem + 4vw);
 
 	a {
-		font-size: 2.4rem;
+		// font-size: 2.4rem;
+		font-size: calc(1.2rem + 1.2vw);
 		font-weight: bold;
-		letter-spacing: 0.2rem;
+		// letter-spacing: 0.2rem;
+		letter-spacing: calc(0.1rem + 0.1vw);
 
 		color: $black;
 
@@ -44,10 +49,12 @@
 
 	.social {
 		display: flex;
-		margin-bottom: 2rem;
+		// margin-bottom: 2rem;
+		margin-bottom: calc(1rem + 1vw);
 
 		a {
-			margin-right: 2rem;
+			// margin-right: 2rem;
+			margin-right: calc(1rem + 1vw);
 		}
 	}
 
@@ -56,7 +63,8 @@
 	}
 
 	address {
-		margin-top: 1.8rem;
+		// margin-top: 1.8rem;
+		margin-top: calc(0.9rem + 0.9vw);
 	}
 
 }

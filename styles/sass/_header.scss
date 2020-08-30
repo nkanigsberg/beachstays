@@ -14,10 +14,14 @@
 			background-size: cover;
 
 			// height: 40vw;
-			height: calc(20rem + 30vw);
+			height: calc(20rem + 28vw);
 			// width: 40vw;
-			width: calc(20rem + 30vw);
+			width: calc(20rem + 28vw);
 
+
+
+			max-height: 80vh;
+			// max-width: 65rem;
 		}
 	}
 
@@ -32,8 +36,10 @@
 
 	h1 {
 		text-transform: lowercase;
-		font-size: 6.2rem;
-		letter-spacing: 0.67rem;
+		// font-size: 6.2rem;
+		font-size: calc(2rem + 3.1vw);
+		// letter-spacing: 0.67rem;
+		letter-spacing: calc(0.3rem + 0.35vw);
 		font-weight: 900;
 		font-style: italic;
 		
@@ -41,18 +47,21 @@
 
 		z-index: 100;
 		position: absolute;
-		bottom: 40rem;
-		// bottom: calc(10rem + 15vw);
-		// left: 39.5rem;
-		left: calc(15rem + 25vw);
+		// bottom: 40rem;
+		// bottom: calc(10rem + 25vh);
+		bottom: 35vh;
+
+		left: calc(10rem + 25vw);
 
 
-		width: 40rem;
+		// width: 60rem;
+		width: calc(30rem + 30vw);
 
 		span {
 			font-family: $secondaryFont;
 			text-transform: uppercase;
-			font-size: 11.12rem;
+			// font-size: 11.12rem;
+			font-size: calc(3rem + 5vw);
 
 			color: $accent2;
 		}
@@ -67,17 +76,24 @@
 		background-position: center;
 
 		height: 70vh;
+
+		position: relative;
 	}
 
 	h1 {
 		font-weight: bold;
-		font-size: 8.7rem;
-		line-height: 5.8rem;
-		letter-spacing: 0.9rem;
+		// font-size: 8.7rem;
+		font-size: calc(4.35rem + 4.35vw);
+		// line-height: 5.8rem;
+		line-height: calc(2.8rem + 2.8vw);
+		// letter-spacing: 0.9rem;
+		letter-spacing: calc(0.45rem + 0.45vw);
 
 		color: $white;
 
-		margin-top: 25vh;
+		// margin-top: 25vh;
+		position: absolute;
+		bottom: 20rem;
 	}
 }
 

@@ -2,23 +2,30 @@
 .top-bar {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 
 	padding-top: 1rem;
+
+	position: relative;
+	z-index: 200;
 
 	ul {
 		display: flex;
 
 
 		a {
-			font-size: 2rem;
-			line-height: 2.9rem;
+			// font-size: 2rem;
+			font-size: calc(1rem + 1vw);
+			// line-height: 2.9rem;
+			line-height: calc(1.4rem + 1.5vw);
 			letter-spacing: 0.1rem;
 			text-transform: uppercase;
 
 			color: $white;
 
 			display: inline-block;
-			padding: 1rem 2rem;
+			// padding: 1rem 2rem;
+			padding: calc(0.5rem + 0.5vw) calc(1rem + 1vw);
 
 
 			&:hover,
@@ -39,7 +46,8 @@
 
 .logo {
 	font-family: $secondaryFont;
-	font-size: 3.46rem;
+	// font-size: 3.46rem;
+	font-size: calc(1.7rem + 1.7vw);
 	font-weight: 900;
 	font-style: italic;
 

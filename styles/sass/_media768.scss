@@ -1,0 +1,67 @@
+// Media query - 768px
+@media (max-width: 768px) {
+	// nav - dropdown
+	.top-bar {
+		ul {
+			flex-direction: column;
+
+			background-color: $black;
+
+			position: fixed;
+			top: 0;
+			right: -16rem;
+
+			padding: 5.5rem 2rem 3rem;
+
+			width: 16rem;
+
+			transition: 0.2s right;
+		}
+
+
+		// show hamburger menu
+		input,
+		label {
+			display: inline;
+			position: fixed;
+			z-index: 500;
+
+			top: 1rem;
+			right: 2.5rem;
+		}
+
+		input {
+			opacity: 0;
+
+			&:checked ~ ul {
+				right: 0;
+			}
+
+			&:focus ~ label {
+				color: $accent1;
+				outline: 1px dotted $accent1;
+			}
+		}
+
+		label {
+			font-size: 2rem;
+
+			cursor: pointer;
+			color: white;
+
+			padding: 1rem;
+
+			text-shadow: -1px 1px $accent1;
+
+			&:hover {
+				color: $accent1;
+			}
+		}
+
+	}
+
+	.logo {
+		align-self: flex-start;
+	}
+
+}

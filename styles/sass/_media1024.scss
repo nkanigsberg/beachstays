@@ -1,0 +1,16 @@
+// Media query - 1024px
+@media (max-width: 1024px) {
+	.home-page {
+		header {
+			height: 80vh;
+		}
+
+		h1 {
+			left: 20vw;
+		}
+
+		.visit .image {
+			flex-basis: 30%;
+		}
+	}
+}
