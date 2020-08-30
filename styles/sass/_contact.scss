@@ -1,0 +1,18 @@
+// contact page
+.contact-page {
+	.form-container {
+		background-color: $white;
+		padding: 4rem;
+		
+		position: relative;
+		top: -20rem;
+
+		// width: $contentWidth;
+		width: 20rem;
+	}
+
+	form {
+		width: 20rem;
+	}
+
+}

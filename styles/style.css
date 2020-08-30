@@ -414,6 +414,7 @@ button {
 .home-page .hero {
   background-image: url(../images/home-image-1.jpg);
   background-size: cover;
+  background-position: center;
   height: 85%;
 }
 
@@ -441,6 +442,7 @@ button {
 .blog-page header,
 .contact-page header {
   background-size: cover;
+  background-position: center;
   height: 70vh;
 }
 
@@ -789,6 +791,18 @@ button {
   position: absolute;
   left: 1rem;
   top: 0.5rem;
+}
+
+.contact-page .form-container {
+  background-color: #FAFFFE;
+  padding: 4rem;
+  position: relative;
+  top: -20rem;
+  width: 20rem;
+}
+
+.contact-page form {
+  width: 20rem;
 }
 
 footer {
