@@ -37,7 +37,7 @@
 	h1 {
 		text-transform: lowercase;
 		// font-size: 6.2rem;
-		font-size: calc(1.5rem + 3.5vw);
+		font-size: calc(1.2rem + 3.5vw);
 		// letter-spacing: 0.67rem;
 		letter-spacing: calc(0.3rem + 0.35vw);
 		font-weight: 900;
@@ -61,7 +61,7 @@
 			font-family: $secondaryFont;
 			text-transform: uppercase;
 			// font-size: 11.12rem;
-			font-size: calc(2rem + 6vw);
+			font-size: calc(1.5rem + 6vw);
 
 			color: $accent2;
 		}
@@ -83,7 +83,7 @@
 	h1 {
 		font-weight: bold;
 		// font-size: 8.7rem;
-		font-size: calc(4.35rem + 4.35vw);
+		font-size: calc(3rem + 5vw);
 		// line-height: 5.8rem;
 		line-height: calc(3.4rem + 3vw);
 		// letter-spacing: 0.9rem;
@@ -91,9 +91,13 @@
 
 		color: $white;
 
+		display: block;
+		width: 90%;
+
 		// margin-top: 25vh;
 		position: absolute;
-		bottom: 20rem;
+		// bottom: 20rem;
+		bottom: calc(12rem + 8vw);
 	}
 }
 

@@ -2,7 +2,7 @@
 // visit
 .visit {
 	// padding: 10rem 0;
-	padding: calc(5rem + 5vw) 0;
+	// padding: calc(2rem + 6vw) 0;
 
 	&-container {
 		display: flex;
@@ -27,7 +27,7 @@
 	background-color: $secondaryBackground;
 
 	// padding: 10rem 0;
-	padding: calc(5rem + 5vw) 0;
+	// padding: calc(2rem + 6vw) 0;
 
 	&-container {
 		display: flex;
@@ -43,7 +43,7 @@
 .info {
 
 	// padding: 8rem 0;
-	padding: calc(4rem + 4vw) 0;
+	// padding: calc(4rem + 4vw) 0;
 	
 	&-container {
 		display: flex;
@@ -58,7 +58,7 @@
 		// padding-left: 8rem;
 		padding-left: calc(4rem + 4vw);
 		// padding-bottom: 5rem;
-		padding-bottom: calc(2.5rem + 2.5vw);
+		padding-bottom: calc(1.5rem + 2.5vw);
 	}
 
 	.icon {

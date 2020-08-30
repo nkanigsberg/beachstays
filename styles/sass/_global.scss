@@ -150,6 +150,21 @@ button {
 		0.1s color;
 }
 
+
+// section spacing
+.visit,
+.gallery,
+.free-trip .text {
+	padding: calc(2rem + 6vw) 0;
+}
+
+.info {
+	padding: calc(2rem + 4vw) 0;
+}
+
+
+// skip links
+
 .skip-link {
 	z-index: 1000;
 	

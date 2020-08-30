@@ -351,6 +351,16 @@ button {
   transition: 0.1s background-color, 0.1s color;
 }
 
+.visit,
+.gallery,
+.free-trip .text {
+  padding: calc(2rem + 6vw) 0;
+}
+
+.info {
+  padding: calc(2rem + 4vw) 0;
+}
+
 .skip-link {
   z-index: 1000;
   background: white;
@@ -445,7 +455,7 @@ button {
 
 .home-page h1 {
   text-transform: lowercase;
-  font-size: calc(1.5rem + 3.5vw);
+  font-size: calc(1.2rem + 3.5vw);
   letter-spacing: calc(0.3rem + 0.35vw);
   font-weight: 900;
   font-style: italic;
@@ -460,7 +470,7 @@ button {
 .home-page h1 span {
   font-family: "Playfair Display SC", serif;
   text-transform: uppercase;
-  font-size: calc(2rem + 6vw);
+  font-size: calc(1.5rem + 6vw);
   color: #063974;
 }
 
@@ -475,12 +485,14 @@ button {
 .blog-page h1,
 .contact-page h1 {
   font-weight: bold;
-  font-size: calc(4.35rem + 4.35vw);
+  font-size: calc(3rem + 5vw);
   line-height: calc(3.4rem + 3vw);
   letter-spacing: calc(0.45rem + 0.45vw);
   color: #FAFFFE;
+  display: block;
+  width: 90%;
   position: absolute;
-  bottom: 20rem;
+  bottom: calc(12rem + 8vw);
 }
 
 .blog-page header {
@@ -489,10 +501,6 @@ button {
 
 .contact-page header {
   background-image: url(../../images/contact-image-1.jpg);
-}
-
-.visit {
-  padding: calc(5rem + 5vw) 0;
 }
 
 .visit-container {
@@ -522,7 +530,6 @@ button {
 
 .gallery {
   background-color: #d4f8f0;
-  padding: calc(5rem + 5vw) 0;
 }
 
 .gallery-container {
@@ -537,10 +544,6 @@ button {
 .gallery .image {
   -ms-flex-preferred-size: 30%;
       flex-basis: 30%;
-}
-
-.info {
-  padding: calc(4rem + 4vw) 0;
 }
 
 .info-container {
@@ -559,7 +562,7 @@ button {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   padding-left: calc(4rem + 4vw);
-  padding-bottom: calc(2.5rem + 2.5vw);
+  padding-bottom: calc(1.5rem + 2.5vw);
 }
 
 .info .icon {
@@ -657,8 +660,8 @@ button {
   background-color: #FAFFFE;
 }
 
-.free-trip .text {
-  padding: calc(5rem + 5vw) 0;
+.banner-image img {
+  min-height: 15rem;
 }
 
 form {
@@ -1005,6 +1008,7 @@ footer .created a:hover, footer .created a:focus {
   .blog-page h1,
   .contact-page h1 {
     bottom: 14.5rem;
+    text-align: center;
   }
   .home-page .visit-container {
     -ms-flex-wrap: wrap;
@@ -1116,5 +1120,112 @@ footer .created a:hover, footer .created a:focus {
   footer .created {
     position: static;
     text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-page h1 {
+    left: 8vw;
+  }
+  .home-page h2 {
+    text-align: center;
+  }
+  .home-page .visit .text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .home-page .visit .button {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .gallery .image {
+    -ms-flex-preferred-size: 90%;
+        flex-basis: 90%;
+    margin: 1rem;
+  }
+  .info-item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .info-item:last-of-type {
+    padding-bottom: 0;
+  }
+  .next-step .image,
+  .next-step .text {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    max-width: 100%;
+  }
+  .next-step img {
+    width: 100vw;
+  }
+  .next-step .text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+  }
+  .next-step .text .button {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .next-step .image-2 {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    margin-bottom: 6rem;
+  }
+  form input {
+    grid-column: span 2;
+  }
+  .comments {
+    padding-bottom: 3rem;
+  }
+  .sidebar {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sidebar .image {
+    -ms-flex-preferred-size: 85%;
+        flex-basis: 85%;
+    margin: 2rem 0;
+  }
+  .sidebar .text {
+    -ms-flex-preferred-size: 90%;
+        flex-basis: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sidebar .text p:first-of-type {
+    text-align: center;
+  }
+  .contact {
+    margin: -4rem 0 2.5rem;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }

@@ -1,0 +1,121 @@
+// Media query - 480px
+@media (max-width: 480px) {
+
+	// =============== home page ===============
+	.home-page {
+
+		h1 {
+			left: 8vw;
+		}
+
+		h2 {
+			text-align: center;
+		}
+
+		.visit {
+			.text {
+				display: flex;
+				flex-direction: column;
+				flex-basis: 100%;
+			}
+
+			.button {
+				align-self: center;
+			}
+		}
+	}
+
+	.gallery {
+		.image {
+			flex-basis: 90%;
+			margin: 1rem;
+		}
+	}
+
+	.info {
+		&-item {
+			flex-basis: 100%;
+
+			&:last-of-type {
+				padding-bottom: 0;
+			}
+		}
+	}
+
+	.next-step {
+		.image,
+		.text {
+			flex-basis: 100%;
+			max-width: 100%;
+		}
+
+		img {
+			width: 100vw;
+		}
+
+		.text {
+			display: flex;
+			flex-direction: column;
+			text-align: left;
+
+			.button {
+				align-self: center;
+			}
+		}
+
+		.image {
+			&-2 {
+				order: 0;
+				margin-bottom: 6rem;
+			}
+		}
+
+	}
+
+	// =============== forms ===============
+	form {
+		input {
+			grid-column: span 2;
+		}
+	}
+
+
+	// =============== blog ===============
+	
+	.comments {
+		padding-bottom: 3rem;
+	}
+	
+	.sidebar {
+		flex-wrap: wrap;
+		justify-content: center;
+
+		.image {
+			flex-basis: 85%;
+			// order: 1;
+
+			margin: 2rem 0;
+		}
+
+		.text {
+			flex-basis: 90%;
+
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		
+			p:first-of-type {
+				text-align: center;
+			}
+		}
+	}
+
+	// =============== contact ===============
+	.contact {
+		margin: -4rem 0 2.5rem;
+
+		flex-basis: 100%;
+	}
+
+
+}
