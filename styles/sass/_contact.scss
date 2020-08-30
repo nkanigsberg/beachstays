@@ -2,17 +2,61 @@
 .contact-page {
 	.form-container {
 		background-color: $white;
+		@include box-shadow(right);
+
 		padding: 4rem;
 		
 		position: relative;
-		top: -20rem;
+		top: -15rem;
 
-		// width: $contentWidth;
-		width: 20rem;
+		width: $contentWidth;
+		// width: 20rem;
+	}
+}
+
+.contact-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.contact {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 25%;
+
+	padding-top: 8rem;
+
+	a {
+		font-size: 2.4rem;
+		font-weight: bold;
+		letter-spacing: 0.2rem;
+
+		color: $black;
+
+		transition: 0.1s opacity;	
+
+		&:hover,
+		&:focus {
+			opacity: 60%;
+		}
 	}
 
-	form {
-		width: 20rem;
+	.social {
+		display: flex;
+		margin-bottom: 2rem;
+
+		a {
+			margin-right: 2rem;
+		}
+	}
+
+	p {
+		margin: 0;
+	}
+
+	address {
+		margin-top: 1.8rem;
 	}
 
 }

@@ -655,6 +655,7 @@ form textarea {
 form input {
   border: none;
   border-bottom: 2px solid #50E3C2;
+  width: 100%;
 }
 
 form textarea {
@@ -795,14 +796,66 @@ button {
 
 .contact-page .form-container {
   background-color: #FAFFFE;
+  -webkit-box-shadow: 15px 15px #50E3C2;
+          box-shadow: 15px 15px #50E3C2;
   padding: 4rem;
   position: relative;
-  top: -20rem;
-  width: 20rem;
+  top: -15rem;
+  width: 65%;
 }
 
-.contact-page form {
-  width: 20rem;
+.contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  padding-top: 8rem;
+}
+
+.contact a {
+  font-size: 2.4rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  color: #2C2C2C;
+  -webkit-transition: 0.1s opacity;
+  transition: 0.1s opacity;
+}
+
+.contact a:hover, .contact a:focus {
+  opacity: 60%;
+}
+
+.contact .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.contact .social a {
+  margin-right: 2rem;
+}
+
+.contact p {
+  margin: 0;
+}
+
+.contact address {
+  margin-top: 1.8rem;
 }
 
 footer {

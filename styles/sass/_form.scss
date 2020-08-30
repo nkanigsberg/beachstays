@@ -20,6 +20,8 @@ form {
 	input {
 		border: none;
 		border-bottom: 2px solid $accent1;
+
+		width: 100%;
 	}
 
 	textarea {
@@ -32,4 +34,5 @@ form {
 #message,
 button {
 	grid-column: span 2;
+
 }
