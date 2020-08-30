@@ -130,6 +130,13 @@
 
 		// margin: 1rem 0 2rem;
 		margin: calc(0.5rem + 0.5vw) 0 calc(1rem + 1vw);
+
+		transition: 0.1s opacity;
+
+		&:hover,
+		&:focus {
+			opacity: 60%;
+		}
 	}
 
 	li {

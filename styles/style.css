@@ -314,7 +314,7 @@ h2 {
 h3 {
   font-weight: bold;
   font-size: calc(1.5rem + 1.5vw);
-  line-height: calc(2.9rem + 2.9vw);
+  line-height: calc(2rem + 3vw);
   letter-spacing: calc(0.16rem + 0.16vw);
   color: #0C5F4C;
 }
@@ -445,7 +445,7 @@ button {
 
 .home-page h1 {
   text-transform: lowercase;
-  font-size: calc(2rem + 3.1vw);
+  font-size: calc(1.5rem + 3.5vw);
   letter-spacing: calc(0.3rem + 0.35vw);
   font-weight: 900;
   font-style: italic;
@@ -460,7 +460,7 @@ button {
 .home-page h1 span {
   font-family: "Playfair Display SC", serif;
   text-transform: uppercase;
-  font-size: calc(3rem + 5vw);
+  font-size: calc(2rem + 6vw);
   color: #063974;
 }
 
@@ -476,7 +476,7 @@ button {
 .contact-page h1 {
   font-weight: bold;
   font-size: calc(4.35rem + 4.35vw);
-  line-height: calc(2.8rem + 2.8vw);
+  line-height: calc(3.4rem + 3vw);
   letter-spacing: calc(0.45rem + 0.45vw);
   color: #FAFFFE;
   position: absolute;
@@ -803,6 +803,12 @@ button {
   letter-spacing: calc(0.125rem + 0.125vw);
   color: #0C5F4C;
   margin: calc(0.5rem + 0.5vw) 0 calc(1rem + 1vw);
+  -webkit-transition: 0.1s opacity;
+  transition: 0.1s opacity;
+}
+
+.sidebar a:hover, .sidebar a:focus {
+  opacity: 60%;
 }
 
 .sidebar li {
@@ -926,9 +932,15 @@ footer .created a:hover, footer .created a:focus {
     -ms-flex-preferred-size: 30%;
         flex-basis: 30%;
   }
+  .next-step {
+    padding: 2rem 0;
+  }
 }
 
 @media (max-width: 768px) {
+  .wrapper {
+    width: 90%;
+  }
   .top-bar ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -974,5 +986,135 @@ footer .created a:hover, footer .created a:focus {
   .logo {
     -ms-flex-item-align: start;
         align-self: flex-start;
+  }
+  .home-page header {
+    height: 60vh;
+  }
+  .home-page header .accent-image {
+    height: 40vw;
+    width: 40vw;
+  }
+  .home-page h1 {
+    bottom: 25vh;
+    left: 14vw;
+  }
+  .blog-page header,
+  .contact-page header {
+    height: 50vh;
+  }
+  .blog-page h1,
+  .contact-page h1 {
+    bottom: 14.5rem;
+  }
+  .home-page .visit-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .home-page .visit .text,
+  .home-page .visit .image {
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+  }
+  .home-page .visit .image {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    margin-bottom: 2rem;
+  }
+  .home-page .visit .text {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .gallery-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .gallery .image {
+    -ms-flex-preferred-size: 46%;
+        flex-basis: 46%;
+  }
+  .gallery .image:last-of-type {
+    margin-top: 4%;
+  }
+  .blog-page article {
+    top: -8rem;
+    width: 100%;
+  }
+  .blog-page article img {
+    width: 100vw;
+    max-width: 100vw;
+  }
+  .blog-page .comments {
+    width: 100%;
+    padding-top: 8rem;
+  }
+  .sidebar {
+    position: static;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .sidebar .image {
+    -ms-flex-preferred-size: 42%;
+        flex-basis: 42%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sidebar .text {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+  }
+  .contact-page .form-container {
+    top: -10rem;
+    width: 100%;
+  }
+  .contact-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact {
+    padding-top: 0;
+    margin-top: -6rem;
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contact address {
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .contact address p:not(:first-child) {
+    display: inline;
+  }
+  footer .created {
+    position: static;
+    text-align: center;
   }
 }

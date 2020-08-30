@@ -1,6 +1,13 @@
 // Media query - 768px
 @media (max-width: 768px) {
-	// nav - dropdown
+
+	.wrapper {
+		width: 90%;
+	}
+
+	
+	// =============== nav - dropdown ===============
+
 	.top-bar {
 		ul {
 			flex-direction: column;
@@ -62,6 +69,177 @@
 
 	.logo {
 		align-self: flex-start;
+	}
+
+	// =============== header ===============
+
+	// home page
+	.home-page {
+		header {
+			height: 60vh;
+
+			.accent-image {
+				height: 40vw;
+				width: 40vw;
+			}
+
+		}
+
+		h1 {
+			bottom: 25vh;
+			left: 14vw;
+		}
+	}
+
+	// blog & contact page
+	.blog-page,
+	.contact-page {
+		header {
+			height: 50vh;
+		}
+
+		h1 {
+			bottom: 14.5rem;
+		}
+	}
+
+
+	// =============== main ===============
+
+	.home-page {
+		.visit {
+			&-container {
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+
+			.text,
+			.image {
+				flex-basis: 80%;
+			}
+
+			.image {
+				order: 0;
+				margin-bottom: 2rem;
+			}
+
+			.text {
+				order: 1;
+			}
+		}
+	}
+
+	// gallery section
+	.gallery {
+
+		&-container {
+			flex-wrap: wrap;
+			justify-content: space-around
+		}
+
+		.image {
+			flex-basis: 46%;
+
+			&:last-of-type {
+				margin-top: 4%;
+			}
+		}
+	}
+
+
+	// =============== blog ===============
+
+	.blog-page {
+		article {
+			top: -8rem;
+
+			width: 100%;
+
+			img {
+				width: 100vw;
+				max-width: 100vw;
+			}
+		}
+
+		.comments {
+			width: 100%;
+
+			padding-top: 8rem;
+		}
+		
+	}
+
+	.sidebar {
+		position: static;
+		flex-direction: row;
+		justify-content: space-between;
+
+		width: 100%;
+
+		margin-bottom: 3rem;
+
+		.image {
+			flex-basis: 42%;
+
+			display: flex;
+			align-items: center;
+		}
+
+		.text {
+			flex-basis: 48%;
+		}
+	}
+
+	// =============== contact ===============
+
+	.contact-page {
+		.form-container {
+			top: -10rem;
+
+			width: 100%;
+		}
+	}
+
+	.contact-container {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.contact {
+		padding-top: 0;
+		margin-top: -6rem;
+
+		flex-basis: 70%;
+		align-items: center;
+
+		.links {
+			display: flex;
+		}
+
+
+		address {
+			margin-top: 0;
+			text-align: center;
+
+			margin-bottom: 2rem;
+
+			p:not(:first-child) {
+				display: inline;
+			}
+		}
+	}
+
+
+
+
+
+
+	// =============== footer ===============
+	footer {
+		.created {
+			position: static;
+			text-align: center;
+		}
 	}
 
 }
