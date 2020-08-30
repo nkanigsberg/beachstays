@@ -1,0 +1,35 @@
+form {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 3rem;
+
+
+		input,
+		textarea {
+			font-weight: 300;
+			font-size: 2rem;
+			line-height: 3.2rem;
+			letter-spacing: 0.2rem;
+
+			background-color: inherit;
+			padding: 2rem;
+
+
+		}
+
+	input {
+		border: none;
+		border-bottom: 2px solid $accent1;
+	}
+
+	textarea {
+		border: 2px solid $accent1;
+		height: 20rem;
+	}
+}
+
+#comment,
+#message,
+button {
+	grid-column: span 2;
+}

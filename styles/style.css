@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -235,7 +236,6 @@ html {
   overflow: hidden;
 }
 
-/* Strip default margin/padding/font-weight */
 h1,
 h2,
 h3,
@@ -251,25 +251,21 @@ button {
   font-weight: normal;
 }
 
-/* Strip ul default styling */
 ul {
   list-style: none;
 }
 
-/* Strip anchor tag default styling */
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* Strip button default styling (and add pointer cursor) */
 button {
   border: none;
   background: none;
   cursor: pointer;
 }
 
-/* ensure images fit inside container */
 img {
   width: 100%;
   max-width: 100%;
@@ -279,12 +275,10 @@ img {
   display: block;
 }
 
-/* strip default address styling */
 address {
   font-style: normal;
 }
 
-/* set root font size to 10px for simple rem conversion */
 html {
   font-size: 62.5%;
 }
@@ -293,14 +287,12 @@ body {
   font-size: 1.6rem;
 }
 
-/* wrapper styles */
 .wrapper {
   max-width: 1400px;
   width: 85%;
   margin: 0 auto;
 }
 
-/* =============== global styles =============== */
 html {
   scroll-behavior: smooth;
 }
@@ -332,6 +324,7 @@ p {
   line-height: 3.2rem;
   letter-spacing: 0.2rem;
   color: #2C2C2C;
+  margin-bottom: 2.8rem;
 }
 
 .button,
@@ -344,7 +337,6 @@ button {
   background-color: #063974;
   display: inline-block;
   padding: 1rem 2rem;
-  margin-top: 1.5rem;
 }
 
 .button:hover, .button:focus,
@@ -357,33 +349,6 @@ a,
 button {
   -webkit-transition: 0.1s background-color, 0.1s color;
   transition: 0.1s background-color, 0.1s color;
-}
-
-header {
-  height: 100vh;
-  position: relative;
-}
-
-header .accent-image {
-  z-index: 90;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background-image: url(../images/header-box.jpg);
-  background-size: cover;
-  height: calc(20rem + 30vw);
-  width: calc(20rem + 30vw);
-}
-
-header input,
-header label {
-  display: none;
-}
-
-.hero {
-  background-image: url(../images/home-image-1.jpg);
-  background-size: cover;
-  height: 85%;
 }
 
 .top-bar {
@@ -406,6 +371,7 @@ header label {
   font-size: 2rem;
   line-height: 2.9rem;
   letter-spacing: 0.1rem;
+  text-transform: uppercase;
   color: #FAFFFE;
   display: inline-block;
   padding: 1rem 2rem;
@@ -415,17 +381,48 @@ header label {
   color: #50E3C2;
 }
 
+.top-bar input,
+.top-bar label {
+  display: none;
+}
+
 .logo {
   font-family: "Playfair Display SC", serif;
   font-size: 3.46rem;
+  font-weight: 900;
+  font-style: italic;
   color: #50E3C2;
   padding: 1rem;
 }
 
-h1 {
+.home-page header {
+  height: 100vh;
+  position: relative;
+}
+
+.home-page header .accent-image {
+  z-index: 90;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-image: url(../images/header-box.jpg);
+  background-size: cover;
+  height: calc(20rem + 30vw);
+  width: calc(20rem + 30vw);
+}
+
+.home-page .hero {
+  background-image: url(../images/home-image-1.jpg);
+  background-size: cover;
+  height: 85%;
+}
+
+.home-page h1 {
   text-transform: lowercase;
   font-size: 6.2rem;
   letter-spacing: 0.67rem;
+  font-weight: 900;
+  font-style: italic;
   color: #0C5F4C;
   z-index: 100;
   position: absolute;
@@ -434,11 +431,35 @@ h1 {
   width: 40rem;
 }
 
-h1 span {
+.home-page h1 span {
   font-family: "Playfair Display SC", serif;
   text-transform: uppercase;
   font-size: 11.12rem;
   color: #063974;
+}
+
+.blog-page header,
+.contact-page header {
+  background-size: cover;
+  height: 70vh;
+}
+
+.blog-page h1,
+.contact-page h1 {
+  font-weight: bold;
+  font-size: 8.7rem;
+  line-height: 5.8rem;
+  letter-spacing: 0.9rem;
+  color: #FAFFFE;
+  margin-top: 25vh;
+}
+
+.blog-page header {
+  background-image: url(../images/blog-image-1.jpg);
+}
+
+.contact-page header {
+  background-image: url(../../images/contact-image-1.jpg);
 }
 
 .visit {
@@ -611,6 +632,165 @@ h1 span {
   padding: 10rem 0;
 }
 
+form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+form input,
+form textarea {
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.2rem;
+  background-color: inherit;
+  padding: 2rem;
+}
+
+form input {
+  border: none;
+  border-bottom: 2px solid #50E3C2;
+}
+
+form textarea {
+  border: 2px solid #50E3C2;
+  height: 20rem;
+}
+
+#comment,
+#message,
+button {
+  grid-column: span 2;
+}
+
+.blog-page article {
+  width: 65%;
+  position: relative;
+  top: -13.5rem;
+}
+
+.blog-page article .image {
+  direction: rtl;
+}
+
+.blog-page article img {
+  width: 65vw;
+  max-width: 65vw;
+  -webkit-box-shadow: 15px 15px #50E3C2;
+          box-shadow: 15px 15px #50E3C2;
+}
+
+.blog-page article .text {
+  border: 5px solid #50E3C2;
+  padding: 6rem 7.5rem 6rem 50%;
+  margin-right: -1.5rem;
+  margin-left: -50%;
+  margin-bottom: -13.5rem;
+}
+
+.blog-page article time {
+  margin-bottom: 3rem;
+}
+
+.blog-page article time span {
+  font-weight: bold;
+}
+
+.blog-page time {
+  font-style: italic;
+  font-size: 2rem;
+  color: #063974;
+  display: block;
+}
+
+.blog-page main {
+  position: relative;
+}
+
+.comments {
+  padding: 6rem 0 10rem;
+  width: 65%;
+}
+
+.comments h3 {
+  font-size: 3rem;
+  color: #2C2C2C;
+  margin-bottom: 3rem;
+}
+
+.comments time {
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.comment {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 7fr;
+      grid-template-columns: 1fr 7fr;
+}
+
+.comment:first-of-type {
+  margin-bottom: 6rem;
+}
+
+.comment .text {
+  padding-left: 3rem;
+}
+
+.sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 25vw;
+  position: absolute;
+  right: 0;
+  top: 10rem;
+}
+
+.sidebar h4 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
+  color: #063974;
+  margin: 2rem 0;
+}
+
+.sidebar p {
+  margin: 0;
+}
+
+.sidebar a {
+  font-weight: bold;
+  font-size: 2rem;
+  letter-spacing: 0.25rem;
+  color: #0C5F4C;
+  margin: 1rem 0 2rem;
+}
+
+.sidebar li {
+  padding-left: 3.5rem;
+  position: relative;
+}
+
+.sidebar li::before {
+  content: '•';
+  font-size: 2rem;
+  color: #50E3C2;
+  position: absolute;
+  left: 1rem;
+  top: 0.5rem;
+}
+
 footer {
   background-color: #2C2C2C;
   padding: 0.5rem;
@@ -619,6 +799,7 @@ footer {
 
 footer p {
   color: #FAFFFE;
+  margin: 0;
 }
 
 footer .copyright {

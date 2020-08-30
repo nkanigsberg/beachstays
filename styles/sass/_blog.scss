@@ -1,0 +1,140 @@
+// variables
+$contentWidth: 65%;
+
+
+// blog page
+.blog-page {
+	article {
+		width: $contentWidth;
+		position: relative;
+		top: -13.5rem;
+
+		.image {
+			direction: rtl;
+		}
+
+		img {
+			width: 65vw;
+			max-width: 65vw;
+			@include box-shadow(right);
+		}
+
+		.text {
+			border: 5px solid $accent1;
+
+			padding: 6rem 7.5rem 6rem 50%;
+			margin-right: -1.5rem;
+			margin-left: -50%;
+			margin-bottom: -13.5rem;
+		}
+
+		time {
+			margin-bottom: 3rem;
+
+		span {
+			font-weight: bold;
+		}
+		}
+	}
+
+	// time stamp of blog post
+	time {
+		font-style: italic;
+		font-size: 2rem;
+
+		color: $accent2;
+
+		display: block;
+	}
+
+	main {
+		position: relative;
+	}
+}
+
+.comments {
+	padding: 6rem 0 10rem;
+
+	width: $contentWidth;
+
+	h3 {
+		font-size: 3rem;
+
+		color: $black;
+
+		margin-bottom: 3rem;
+	}
+
+	time {
+		font-style: normal;
+		font-weight: bold;
+		letter-spacing: 0.2rem;
+
+		margin-bottom: 1rem;
+	}
+}
+
+.comment {
+	display: grid;
+	grid-template-columns: 1fr 7fr;
+
+	&:first-of-type {
+		margin-bottom: 6rem;
+	}
+
+	.text {
+		padding-left: 3rem;
+	}
+}
+
+.sidebar {
+	display: flex;
+	flex-direction: column;
+
+	width: 25vw;
+
+	position: absolute;
+	right: 0;
+	top: 10rem;
+
+	h4 {
+		font-weight: bold;
+		font-size: 2.5rem;
+		letter-spacing: 0.1rem;
+		
+		color: $accent2;
+
+		margin: 2rem 0;
+	}
+
+	p {
+		margin: 0;
+	}
+
+	a {
+		font-weight: bold;
+		font-size: 2rem;
+		letter-spacing: 0.25rem;
+
+		color: $accent3;
+
+		margin: 1rem 0 2rem;
+	}
+
+	li {
+		padding-left: 3.5rem;
+
+		position: relative;
+
+		&::before {
+			content: '•';
+			font-size: 2rem;
+
+			color: $accent1;
+
+			position: absolute;
+			left: 1rem;
+			top: 0.5rem;
+		}
+	}
+}

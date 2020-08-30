@@ -1,0 +1,49 @@
+// navbar
+.top-bar {
+	display: flex;
+	justify-content: space-between;
+
+	padding-top: 1rem;
+
+	ul {
+		display: flex;
+
+
+		a {
+			font-size: 2rem;
+			line-height: 2.9rem;
+			letter-spacing: 0.1rem;
+			text-transform: uppercase;
+
+			color: $white;
+
+			display: inline-block;
+			padding: 1rem 2rem;
+
+
+			&:hover,
+			&:focus {
+				color: $accent1;
+			}
+		}
+
+	}
+
+	// hide hamburger menu
+	input,
+	label {
+		display: none;
+	}
+
+}
+
+.logo {
+	font-family: $secondaryFont;
+	font-size: 3.46rem;
+	font-weight: 900;
+	font-style: italic;
+
+	color: $accent1;
+
+	padding: 1rem;
+}

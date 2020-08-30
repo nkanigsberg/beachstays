@@ -1,104 +1,89 @@
-// header
-header {	
-	height: 100vh;
-	position: relative;
+// home page header
+.home-page {
+	header {	
+		height: 100vh;
+		position: relative;
 
-	.accent-image {
-		z-index: 90;
-		position: absolute;
-		left: 0;
-		bottom: 0;
+		.accent-image {
+			z-index: 90;
+			position: absolute;
+			left: 0;
+			bottom: 0;
 
-		background-image: url(../images/header-box.jpg);
+			background-image: url(../images/header-box.jpg);
+			background-size: cover;
+
+			// height: 40vw;
+			height: calc(20rem + 30vw);
+			// width: 40vw;
+			width: calc(20rem + 30vw);
+
+		}
+	}
+
+	.hero {
+		background-image: url(../images/home-image-1.jpg);
 		background-size: cover;
 
-		// height: 40vw;
-		height: calc(20rem + 30vw);
-		// width: 40vw;
-		width: calc(20rem + 30vw);
-
+		height: 85%;
 	}
 
-	// hide hamburger menu
-	input,
-	label {
-		display: none;
-	}
 
-}
+	h1 {
+		text-transform: lowercase;
+		font-size: 6.2rem;
+		letter-spacing: 0.67rem;
+		font-weight: 900;
+		font-style: italic;
+		
+		color: $accent3;
 
-.hero {
-	background-image: url(../images/home-image-1.jpg);
-	background-size: cover;
-
-	height: 85%;
-}
-
-// navbar
-.top-bar {
-	display: flex;
-	justify-content: space-between;
-
-	padding-top: 1rem;
-
-	ul {
-		display: flex;
+		z-index: 100;
+		position: absolute;
+		bottom: 40rem;
+		// bottom: calc(10rem + 15vw);
+		// left: 39.5rem;
+		left: calc(15rem + 25vw);
 
 
-		a {
-			font-size: 2rem;
-			line-height: 2.9rem;
-			letter-spacing: 0.1rem;
+		width: 40rem;
 
-			color: $white;
+		span {
+			font-family: $secondaryFont;
+			text-transform: uppercase;
+			font-size: 11.12rem;
 
-			display: inline-block;
-			padding: 1rem 2rem;
-
-
-			&:hover,
-			&:focus {
-				color: $accent1;
-			}
+			color: $accent2;
 		}
-
 	}
-
 }
 
-.logo {
-	font-family: $secondaryFont;
-	font-size: 3.46rem;
+// blog and contact page headers
+.blog-page,
+.contact-page {
+	header {
+		background-size: cover;
 
-	color: $accent1;
+		height: 70vh;
+	}
 
-	padding: 1rem;
+	h1 {
+		font-weight: bold;
+		font-size: 8.7rem;
+		line-height: 5.8rem;
+		letter-spacing: 0.9rem;
+
+		color: $white;
+
+		margin-top: 25vh;
+	}
 }
 
+// blog header
+.blog-page header {
+	background-image: url(../images/blog-image-1.jpg);
+}
 
-
-h1 {
-	text-transform: lowercase;
-	font-size: 6.2rem;
-	letter-spacing: 0.67rem;
-	
-	color: $accent3;
-
-	z-index: 100;
-	position: absolute;
-	bottom: 40rem;
-	// bottom: calc(10rem + 15vw);
-	// left: 39.5rem;
-	left: calc(15rem + 25vw);
-
-
-	width: 40rem;
-
-	span {
-		font-family: $secondaryFont;
-		text-transform: uppercase;
-		font-size: 11.12rem;
-
-		color: $accent2;
-	}
+.contact-page header{
+	background-image: url(../../images/contact-image-1.jpg);
 }

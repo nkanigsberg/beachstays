@@ -1,4 +1,4 @@
-/* Strip default margin/padding/font-weight */
+// Strip default margin/padding/font-weight 
 h1,
 h2,
 h3,
@@ -14,25 +14,25 @@ button {
 	font-weight: normal;
 }
 
-/* Strip ul default styling */
+// Strip ul default styling 
 ul {
 	list-style: none;
 }
 
-/* Strip anchor tag default styling */
+// Strip anchor tag default styling 
 a {
 	text-decoration: none;
 	color: inherit;
 }
 
-/* Strip button default styling (and add pointer cursor) */
+// Strip button default styling (and add pointer cursor) 
 button {
 	border: none;
 	background: none;
 	cursor: pointer;
 }
 
-/* ensure images fit inside container */
+// ensure images fit inside container 
 img {
 	width: 100%;
 	max-width: 100%;
@@ -41,12 +41,12 @@ img {
 	display: block;
 }
 
-/* strip default address styling */
+// strip default address styling 
 address {
 	font-style: normal;
 }
 
-/* set root font size to 10px for simple rem conversion */
+// set root font size to 10px for simple rem conversion 
 html {
 	font-size: 62.5%;
 }
@@ -55,7 +55,7 @@ body {
 	font-size: 1.6rem;
 }
 
-/* wrapper styles */
+// wrapper styles 
 .wrapper {
 	max-width: $wrapperMaxWidth;
 	width: $wrapperWidth;
@@ -63,7 +63,7 @@ body {
 }
 
 
-/* =============== global styles =============== */
+// =============== global styles =============== 
 
 html {
 	scroll-behavior: smooth;
@@ -102,6 +102,8 @@ p {
 	letter-spacing: 0.2rem;
 
 	color: $black;
+
+	margin-bottom: 2.8rem;
 }
 
 .button,
@@ -116,7 +118,7 @@ button {
 
 	display: inline-block;
 	padding: 1rem 2rem;
-	margin-top: 1.5rem;
+	// margin-top: 1.5rem;
 
 	&:hover,
 	&:focus {
